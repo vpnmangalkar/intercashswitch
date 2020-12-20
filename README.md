@@ -30,4 +30,4 @@ Create a maven goal in eclipse using below steps.
 Start the application from the Boot Dashboard (Window -> Show View -> Boot Dashboard)
 
 ## Database Scipts
-1. Execute Create Sequence Commands from file sequences.sql
+1. Execute Create Sequence Commands from file db-scripts/sequences.sql
