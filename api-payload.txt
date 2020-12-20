@@ -1,0 +1,134 @@
+Payload:
+
+localhost:8060/api/v1/bank-details/
+{
+    "bankName": "Test Bank 5",
+    "sysControllingBranch": "Baner 5",
+    "swiftCode": "SW5",
+    "bicCode": "BIC5",
+    "micrCode": "MICR5",
+    "countryCode": "IN",
+    "address1": "Pune 5",
+    "dummyClientCode" : "ECOTestClient5",
+    "dummyPackageCode" : "TEST5"
+}
+
+localhost:8060/api/v1/bank-details/{bank-id}
+
+
+
+localhost:8060/api/v1/bank-payment-channel :
+POST :
+{
+   
+  "bankId": "202012187A0",
+  "paymentMode": "PAY_INIT",
+  "channelType": "FILE",
+  "apiUrl": "TEST",
+  "apiUserId": "Test",
+  "apiPassword": "Test",
+  "ftpType": "S",
+  "ftpServer": "10.91.10.154",
+  "ftpUser": "ftpuser",
+  "ftpPwd": "ftpuser",
+  "ftpPort": "22",
+  "ftpPath": "Test",
+  "fileTempDir": "Test",
+  "mqId": "Test",
+  "mqSessionName": "Test",
+  "mqReqQName": "Test",
+  "mqResQName": "Test",
+  "mqConnectionName": "Test",
+  "mqUser": "Test",
+  "mqPassword": "Test",
+  "msgCorrelatedFlag": "Y",
+  "sellerCode": "Test",
+  "defaultPackageCode": "Test"
+
+}
+
+GET : localhost:8060/api/v1/bank-payment-channel/{channel-id}
+
+
+localhost:8060/api/v1/bank-settlement-account
+{
+    "ownerSwiftCode" : "SW1",
+    "ownerBicCode" : "BIC1",
+     "partnerSwiftCode" : "SW2",
+    "partnerBicCode" : "BIC2",
+    "glId" : "GL2",
+    "ccyCode" : "USD",
+    "branchId": "B1",
+    "branchName" : "Baner" 
+}
+
+localhost:8060/api/v1/payment/
+
+
+{
+  "originatingTxnNmbr": "OT1",
+  "interSellerTxnRefNmbr": "ISTRN1",
+  "appcode": "APPCODE1",
+  "clientCode": "CLIENT1",
+  "beneCode": "BENE1",
+  "beneDescription": "BENEFICIARY1",
+  "beneAccountNmbr": "12312412342134231",
+  "beneBankCode": "BANK1",
+  "beneBranchCode": "BRANCH1",
+  "beneAdd1": "Address1",
+  "beneMobile": "87723797239857",
+  "benePhoneNmbr": "123523523",
+  "benePinCode": "4334636",
+  "beneBusinessRegs": "2342346",
+  "beneCcy": "USD",
+  "beneEmail": "test@test.com",
+  "beneFax": "FAX25345",
+  "beneId": "BeneId",
+  "beneIvrCode": "BENEIVRCode",
+  "beneNonResiIndicator": "Y",
+  "benePassportNo": "BENE_PASSPORT",
+  "benePaymentDetails": "Payment_Details",
+  "byOrderOf": "BYOrder",
+  "coAdviceLayout": "Test",
+  "coAuthPersonIc": "Test",
+  "coAuthPersonName": "Test",
+  "coCollBr": "Test",
+  "coDraweeBranch": "Test",
+  "co_mailing_city": "Test",
+  "coMailingCountry": "Test",
+  "coMailingPostcode": 0,
+  "coMailingState": "Test",
+  "originatingEntityType": "Test",
+  "originatingEntityCode": "Test",
+  "originatingEntityAcctNmbr": "Test",
+  "originatingEntityCcy": "Test",
+  "originatingEntityBankId": "Test",
+  "originatingEntityBankName": "Test",
+  "originatingEntityBranchId": "Test",
+  "originatingEntityBranchName": "Test",
+  "originatingEntityBic": "BIC1",
+  "originatingEntitySwift": "SW1",
+  "originatingEntityDrAmnt": "Test",
+  "originatingTxnPayCcy": "Test",
+  "originatingTxnPayCountry": "string",
+  "originatingTxnPaySeller": "Test",
+  "recipientEntityType": "Test",
+  "recipientEntityCode": "Test",
+  "recipientEntityAcctNmbr": "Test",
+  "recipientEntityCcy": "Test",
+  "recipientEntityBankId": "Test",
+  "recipientEntityBankName": "Test",
+  "recipientEntityBranchId": "Test",
+  "recipientEntityBranchName": "Test",
+  "recipientEntityDrAmnt": "Test",
+  "recipientTxnPayCcy": "Test",
+  "recipientEntityBic": "BIF1",
+  "recipientEntitySwift": "SW1",
+  "nostrDrAmount": 25000,
+  "beneCrAmount": 25000,
+  "beneBankAddr" : "Adress",
+  "beneAddr" : "Adress",
+  "beneAccountIban" : "IBAN",
+  "beneBankSwift" : "TEst",
+  "beneBankBic" : "TEst"
+}
