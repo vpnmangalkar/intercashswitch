@@ -31,3 +31,6 @@ Start the application from the Boot Dashboard (Window -> Show View -> Boot Dashb
 
 ## Database Scipts
 1. Execute Create Sequence Commands from file db-scripts/sequences.sql
+
+## OpenAPI Doc
+Use Link after Application Started for the API docs : http://localhost:8060/swagger-ui/index.html 
