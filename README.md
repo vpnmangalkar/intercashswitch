@@ -6,6 +6,7 @@ Intercash Switch
 * Eclipse 2019-03
 * Eclipse Plugins
     * lombok
+    * STS 4
 
 ### Tech/frameworks used
 * Spring-boot  
